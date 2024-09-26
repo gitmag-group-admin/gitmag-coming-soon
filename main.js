@@ -1,5 +1,12 @@
 import './style.css';
 
+import { createIcons, icons } from 'lucide';
+createIcons({ icons });
+
+import tippy from 'tippy.js';
+import 'tippy.js/dist/tippy.css'; // optional for styling
+tippy('[data-tippy-content]');
+
 // count-down timer
 let dest = new Date("nov 12, 2024 23:59:59").getTime();
 let x = setInterval(function () {
